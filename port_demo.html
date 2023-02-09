@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PORTFOLIO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            position: relative;
+            height: 100%;
+            margin: 0;
+        }
+
+        .icon {
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+
+
+
+
+
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+
+        .card_a {
+            width: 272px;
+            border: 1px solid red;
+            height: 272px;
+            box-shadow: 2px 1px 4px 4px;
+            padding: 21px;
+            margin-top: 33px;
+            position: relative;
+        }
+
+        .icon_a {
+            width: 75px;
+            border: 1px solid rgb(43, 255, 0);
+            height: 53px;
+            text-align: center;
+            border-radius: 50%;
+            padding: 12px;
+            top: -31px;
+            position: absolute;
+            background-color: skyblue;
+        }
+
+        .card_b {
+            width: 272px;
+            border: 1px solid red;
+            height: 272px;
+            box-shadow: 2px 1px 4px 4px;
+            padding: 21px;
+            margin-top: 33px;
+            position: relative;
+        }
+
+        .icon_b {
+            width: 100px;
+            border: 1px solid rgb(43, 255, 0);
+            height: 53px;
+            text-align: center;
+            border-radius: 50%;
+            padding: 12px;
+            top: -31px;
+            position: absolute;
+            background-color: skyblue;
+        }
+
+
+        #aboutme {
+            padding-top: 120px;
+            height: 500px;
+            color: #ffeb3b;
+            background-color: gray;
+            text-align: center;
+        }
+
+        #education {
+            padding-top: 120px;
+            height: 764px;
+            color: #607d8b;
+            background-color: orange;
+
+        }
+
+        #technicalskill {
+            padding-top: 120px;
+            height: 500px;
+            color: #570CDC;
+            background-color: skyblue;
+        }
+
+        #project1 {
+            padding-top: 120px;
+            height: 500px;
+            color: #0967db;
+            background-color: lightgreen;
+        }
+
+        #project2 {
+            padding-top: 120px;
+            height: 500px;
+            color: green;
+            background-color: lightpink;
+        }
+
+        #img {
+            text-align: end;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <form onsubmit="formvalidation(event)" name="RegForm">
+        <h1 style="text-align: center">REGISTRATYION FORM</h1>
+        <div style="text-align: center;border: dotted;">
+
+
+            <p><i class="fa fa-user icon"></i>Name: <input class type="text" value="" name="name" id="name"
+                    required></input></p>
+
+            <br />
+            <p><i class="fa fa-envelope icon"></i>email : <input type="text" value="" name="email" id="email"
+                    required></input>
+            </p>
+            <br />
+            <p> <i class='fa fa-phone icon'></i>phonenumber: <input type="tel" value="" name="phone number"
+                    id="phonenumber" required></input></p>
+            <p>
+                <br />
+            <p>about: <input type="text" name="about" id="about" required></input>
+            </p>
+            <input type="submit" name="Submit">
+            </p>
+        </div>
+    </form>
+    <p>name:<span id="display_name"> </span></p>
+    <p>email:<span id="display_email"></span></p>
+    <p>phonenumber:<span id="display_phonenumber"></span></p>
+    <p>about:<span id="display_about"></span></p>
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                <a class="navbar-brand" href="#">PORTFOLIO</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">ABOUT ME</a></li>
+                        <li><a href="#education">EDUCATION</a></li>
+                        <li><a href="#technicalskill">TECHNICALSKILL</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#project1">PROJECT 1</a></li>
+                                <li><a href="#project2">PROJECT 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="aboutme" class="container-fluid">
+        <h1>ABOUT ME</h1>
+        <img src="face image.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+
+        <p>
+        <h3><b>My name is bhanushali krunal</b></h3>
+        </p>
+        <p>I am studing in b.tech in silver oak university</p>
+    </div>
+    <div id="education" class="container-fluid">
+        <h1>EDUCATION</h1>
+        <div id="img">
+            <img src="education image.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+        </div>
+        <div class="container">
+            <div class="card_a">
+                <div class="icon_a">
+                    s.s.c
+                </div>
+
+                <p><b>10 <sup>th</sup> (2015-2016) with 70% from s.k.somaiya vinay mandir.maharastra board</b></p>
+
+            </div>
+            <div class="card_b">
+                <div class="icon_b">
+                    DIPLOMA
+                </div>
+
+                <p><b>IN COMPUTER ENGINEERING COMPLETED(2018-2021)WITH 9.25 C.G.P.A </b></p>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="technicalskill" class="container-fluid">
+        <h1>TECHNICAL SKILL</h1>
+        <img src="technical image.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+        <p><b>HTML,CSS,BOOTSTRAP,OOPS COCEPT,BASIC PYTHON</b></p>
+        <p></p>
+    </div>
+    <div id="project1" class="container-fluid">
+        <h1>PROJECT 1</h1>
+        <img src="project.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+        <p><b>AUXILIUM-BE YOUR OWN BOSS (USING .NET (FRONT END)</p>
+        <p><b>USING WIREFRAME THE DESIGN THE BANKING APP</b></p>
+    </div>
+    <div id="project2" class="container-fluid">
+        <h1>PROJECT 2</h1>
+        <p><b>WORK AS INTERN IN TECBLIC PVT.LTD.</b></p>
+
+    </div>
+
+
+    <script>
+        function formvalidation(e) {
+            e.preventDefault()
+
+            console.log("on submit", e)
+
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phonenumber = document.getElementById("phonenumber").value;
+            const about = document.getElementById("about").value;
+            console.log(name);
+            console.log(email);
+            console.log(phonenumber);
+            console.log(about);
+            if (name != "") {
+                (name?.value > 5)
+                //name.focus();
+                return false;
+
+            }
+            else {
+                alert("Name length should be more than 2 and less than 21 charaters");
+
+            }
+
+            if (email?.value?.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+                email.focus();
+            }
+            else {
+                alert("Please enter a valid email!");
+            }
+
+            if (!phonenumber?.value?.match(/^[1-9][0-9]{9}$/)) {
+                phonenumber?.focus();
+                alert("Phone number must be 10 characters long number and first digit can't be 0!");
+            }
+            // display_name.innerHTML=display_name;
+            //display_email.innerHTML=email;
+            //display_phonenumber.innerHTML=phonenumber;
+            //display_about.innerHTML=about;
+
+            e.preventDefault();
+        }
+        function showInput() {
+            document.getElementById('display').innerHTML =
+                document.getElementById("name").value;
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
